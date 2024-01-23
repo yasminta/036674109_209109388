@@ -23,4 +23,36 @@ public class AppTest {
         String result = triangle.get_type().toString();
         assertEquals(expected, result.toString());
     }
+	@Test
+	/*הפונקציה תחזיר האם המספרים שהוזנו מחזירים משולש*/
+	public void isNotTriangle() {
+		int a = 0;
+		int b = 3;
+		int c = 4;
+		triangle.classifyTriangle(a, b, c);
+		String Expected = Triangle_Types.Nottriangle.toString();
+		String Result = triangle.get_type().toString();
+		assertEquals(Expected, Result.toString());
+	}
+	@Test
+	public void isIsosceles() {
+		int a = 3;
+		int b = 3;
+		int c = 4;
+		triangle.classifyTriangle(a, b, c);
+		String Expected = Triangle_Types.isosceles.toString();
+		String Result = triangle.get_type().toString();
+		assertEquals(Expected, Result.toString());
+	}
+	/*הפונקציה תחזיר האם המספרים שהוזנו יוצרים משולש שונה צלעות*/
+	@Test
+	public void isTriangle() {
+		int a = 5;
+		int b = 3;
+		int c = 4;
+		triangle.classifyTriangle(a, b, c);
+		String Expected = Triangle_Types.Scalene.toString();
+		String Result = triangle.get_type().toString();
+		assertEquals(Expected, Result.toString());
+	}
 }  
