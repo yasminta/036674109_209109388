@@ -14,7 +14,7 @@ public class AppTest {
 	
 	@Test
   
-	public void equilateralTriangle(){
+	public void Ep_equilateralTriangle(){
         int a = 2;
         int b = 2;
         int c=2;
@@ -25,7 +25,7 @@ public class AppTest {
     }
 	@Test
 	/*הפונקציה תחזיר האם המספרים שהוזנו מחזירים משולש*/
-	public void isNotTriangle() {
+	public void Ep_isNotTriangle() {
 		int a = 0;
 		int b = 3;
 		int c = 4;
@@ -35,7 +35,7 @@ public class AppTest {
 		assertEquals(Expected, Result.toString());
 	}
 	@Test
-	public void isIsosceles() {
+	public void Ep_isIsosceles() {
 		int a = 3;
 		int b = 3;
 		int c = 4;
@@ -46,7 +46,7 @@ public class AppTest {
 	}
 	/*הפונקציה תחזיר האם המספרים שהוזנו יוצרים משולש שונה צלעות*/
 	@Test
-	public void isTriangle() {
+	public void Ep_isTriangle() {
 		int a = 5;
 		int b = 3;
 		int c = 4;
